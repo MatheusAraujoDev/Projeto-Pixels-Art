@@ -21,10 +21,14 @@
 
 
 1. Clone o repositório
-  Para fazer isso, basta abrir o seu terminal e digitar o comando `git clone git@github.com:MatheusAraujoDev/Desafio-Formulario-Firebase.git`
+  Para fazer isso, basta abrir o seu terminal e digitar o comando `git clone git@github.com:MatheusAraujoDev/Projeto-Pixels-Art.git`
 
-2. Instale as dependências, digite o comando em seu terminal:
-`npm install`
+2. Instale as dependências do projeto, abrindo um novo terminal e digitando o comando `npm install`.
+
+3. Instale a extensão "Live Server" em seu Visual Studio Code, na aba lateral de extensões.
+
+4. Clique com o botão direito no arquivo `index.html` e selecione a opção `Open With Live Server`.
+
 
 ---
 ## Linter
