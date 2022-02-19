@@ -43,3 +43,13 @@ function setColorToBoard() {
   })  
 }
 setColorToBoard();
+
+const deleteButton = document.getElementById('clear-button');
+deleteButton.addEventListener('click', clearColors);
+
+function clearColors() {
+  let pixels = document.querySelectorAll('.pixel');
+  for (let index = 0; index < pixels.length; index += 1) {
+    pixels[index].style.backgroundColor = 'white';
+  }
+}

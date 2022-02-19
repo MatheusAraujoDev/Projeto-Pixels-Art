@@ -3,7 +3,8 @@ body {
 }
 
 h1 {
-  color:white;
+  color:black;
+  font-style: italic;
   text-align: center;
 }
 
@@ -29,6 +30,38 @@ h1 {
   background-color: green;
 }
 
+#yellow {
+  background-color: yellow;
+}
+
+#orange {
+  background-color: orange;
+}
+
+#pink {
+  background-color:pink;
+}
+
+#lime {
+  background-color:lime;
+}
+
+#aqua {
+  background-color:aqua;
+}
+
+#brown {
+  background-color:brown;
+}
+
+#purple {
+  background-color:darkorchid;
+}
+
+#gray {
+  background-color:gray;
+}
+
 .pixel {
   width: 40px;
   height: 40px;
@@ -46,4 +79,30 @@ h1 {
 #color-palette {
   text-align: center;
   margin-bottom: 20px;
+}
+
+#clear-button {
+  border: 1px solid black;
+  border-radius: 10px;
+  color: black;
+  font-size:medium;
+  padding: 7px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+}
+
+footer {
+  bottom:0;
+  font-size: large;
+  left: 15px;
+  margin-bottom: 10px;
+  position: fixed;
+}
+
+footer > a {
+  text-decoration: none;
 }
