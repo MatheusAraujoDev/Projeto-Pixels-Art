@@ -1,4 +1,5 @@
 # Boas vindas ao repositório do Projeto Arte com Pixels!
+![image](https://user-images.githubusercontent.com/80549950/154822982-d9a9c947-7038-4abf-b158-cc48610120cd.png)
 
 ---
 
