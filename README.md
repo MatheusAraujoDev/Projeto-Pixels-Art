@@ -3,6 +3,11 @@
 
 ---
 
+# Deploy do projeto
+O deploy da aplicação pode ser acessado [clicando aqui](https://projeto-pixels-art.vercel.app/).
+
+---
+
 ## Habilidades
 
 - Manipular o DOM
