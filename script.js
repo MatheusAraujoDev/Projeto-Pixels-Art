@@ -11,12 +11,11 @@ function setColorToPalette() {
 }
 setColorToPalette();
 
-window.onload = setBlack;
-
 function setBlack() {
   const elementBlack = document.getElementById('black');
   elementBlack.classList.add('selected');
 }
+window.onload = setBlack;
 
 function getColor(event) {
   if (event.target.classList[0] === 'color') {
@@ -31,25 +30,27 @@ function getColor(event) {
 const colorPalette = document.querySelector('#color-palette');
 colorPalette.addEventListener('click', getColor);
 
+function handleSelected(e) {
+  const colorSelected = document.querySelector('.selected');
+  if (e.target.className === 'pixel') {
+    const cor = window.getComputedStyle(colorSelected).getPropertyValue('background-color');
+    const clickedPixel = e.target;
+    clickedPixel.style.background = cor;
+  }
+}
+
 function setColorToBoard() {
-  let pixelBoard = document.getElementById('pixel-board')
-  pixelBoard.addEventListener('click', function (e) {
-    const colorSelected = document.querySelector('.selected');
-    if(e.target.className === 'pixel') {
-      const cor = window.getComputedStyle(colorSelected).getPropertyValue('background-color');
-      const clickedPixel = e.target;
-      clickedPixel.style.background = cor;
-    }
-  })  
+  const pixelBoard = document.getElementById('pixel-board');
+  pixelBoard.addEventListener('click', handleSelected);
 }
 setColorToBoard();
 
-const deleteButton = document.getElementById('clear-button');
-deleteButton.addEventListener('click', clearColors);
-
 function clearColors() {
-  let pixels = document.querySelectorAll('.pixel');
+  const pixels = document.querySelectorAll('.pixel');
   for (let index = 0; index < pixels.length; index += 1) {
     pixels[index].style.backgroundColor = 'white';
   }
 }
+
+const deleteButton = document.getElementById('clear-button');
+deleteButton.addEventListener('click', clearColors);
